@@ -7,9 +7,45 @@
 
 **What's on this page?**
 
-<!-- prettier-ignore -->
+Showcase of some of my favourite personal projects:
+
 * TOC
 {:toc}
+
+---
+
+## [<img alt="dbt Labs" height="16px" src="https://www.getdbt.com/favicon.ico"> dbt-π: Custom Python in dbt](https://github.com/billwallis/dbt-py)
+
+<span style="color:grey" size=1>[https://github.com/billwallis/dbt-py](https://github.com/billwallis/dbt-py)</span>
+
+dbt is great, but its use (correction: _abuse_) of Jinja is not 😭
+
+The repo shims dbt to allow custom Python to be available as Jinja callbacks.
+
+This makes it possible to rewrite Jinja macros as Python code, giving us:
+
+- A better developer experience
+- First-class support for unit testing
+- Type hints and better control flow logic
+
+---
+
+## [📖 SQL Learning Materials](https://github.com/billwallis/sql-learning-materials)
+
+<span style="color:grey" size=1>[https://github.com/billwallis/sql-learning-materials](https://github.com/billwallis/sql-learning-materials)</span>
+
+A site where I document lots of SQL stuff:
+
+- [https://billwallis.github.io/sql-learning-materials/](https://billwallis.github.io/sql-learning-materials/)
+
+This has a set of _actually_ difficult SQL challenges largely based on real problems I've encountered in my career:
+
+- [Challenging SQL problems](https://billwallis.github.io/sql-learning-materials/challenging-sql-problems/challenging-sql-problems/)
+
+...as well as some written tutorials with corresponding YouTube videos:
+
+- [From Excel to SQL](https://billwallis.github.io/sql-learning-materials/from-excel-to-sql/from-excel-to-sql/) ([YouTube playlist](https://www.youtube.com/playlist?list=PLEiRgvTilK5rhnVPQ_Tj3Q-CI0rGn_uiD))
+- [Everything about joins](https://billwallis.github.io/sql-learning-materials/everything-about-joins/everything-about-joins/) ([YouTube playlist](https://www.youtube.com/playlist?list=PLEiRgvTilK5rJilO6gc809Eg2Qajgeh02))
 
 ---
 
@@ -58,43 +94,56 @@ Not sure where all your time goes? I wasn't either, so this application generate
 </div>
 <br>
 
+> [!WARNING]
+>
+> This is a work in progress. I'm currently using it to track my time, but it's not yet ready for public consumption.
+
 **✨ Features**
 
 - Drop-down box to select from recent projects
-- Autopopulates the detail text box with the project's last entry
-- Integrates with [Outlook <img alt="Microsoft Outlook" height="14px" src="https://outlook.live.com/favicon.ico"/>](https://outlook.live.com/owa/)
-  - Reads the calendar and autofills with meeting information
-- Integrates with [Jira <img alt="Jira Software" height="12px" src="https://example.atlassian.net/favicon.ico">](https://www.atlassian.com/software/jira)
-  - Reads tickets in the current sprint and adds them to the project drop-down
-  - Adds a worklog to the ticket when the form is submitted
-- Integrates with [Slack <img alt="Slack" height="12px" src="https://slack.com/favicon.ico"/>](https://slack.com/)
-  - Posts a message to channel when the form is submitted
-
-**⚠️ Warnings**
-
-- This is still very early in development and is undergoing a significant restructure
-- The code coverage is extremely limited
-- The code requires manual tweaks the first time it's cloned
-- There are a number of outstanding issues, see the repo's Issues page:
-  - [https://github.com/billwallis/daily-tracker/issues](https://github.com/billwallis/daily-tracker/issues)
+- Drop-down box to select the selected project's recent details
+- By default, autopopulates the project and details from the previous entry
+- Integrates with:
+  - [Google Calendar <img alt="Google Calendar" height="12px" src="https://calendar.google.com/googlecalendar/images/favicons_2020q4/calendar_28.ico"/>](https://calendar.google.com/)
+  - [Outlook <img alt="Microsoft Outlook" height="14px" src="https://outlook.live.com/favicon.ico"/>](https://outlook.live.com/owa/)
+  - [Jira <img alt="Jira Software" height="12px" src="https://example.atlassian.net/favicon.ico">](https://www.atlassian.com/software/jira)
+  - [Slack <img alt="Slack" height="12px" src="https://slack.com/favicon.ico"/>](https://slack.com/)
+  - [GitHub <img alt="GitHub" height="12px" src="https://github.com/favicon.ico"/>](https://github.com/)
+  - [Monday.com <img alt="Monday.com" height="12px" src="https://monday.com/favicon.ico"/>](https://monday.com/)
 
 ---
 
-## [<img alt="dbt-labs" height="16px" src="https://www.getdbt.com/favicon.ico"> Life Admin using dbt](https://github.com/billwallis/billiam-database)
+## [<img alt="pre-commit" height="16px" src="https://pre-commit.com/favicon.ico"> Bill's Hooks](https://github.com/billwallis/bills-hooks)
 
-<span style="color:grey" size=1>[https://github.com/billwallis/billiam-database](https://github.com/billwallis/billiam-database)</span>
+<span style="color:grey" size=1>[https://github.com/billwallis/bills-hooks](https://github.com/billwallis/bills-hooks)</span>
 
-In addition to my 'automated' timesheet (the project above), I also keep track of every transaction I make at an item level (since 2018-01-18).
+I love [pre-commit](https://pre-commit.com/), and I've been building out some of my own hooks.
 
-This project is both a [dbt](https://www.getdbt.com/) proof-of-concept, plus a means for me to analyse my spending and work.
+Current available hooks:
 
-Current lineage diagram:
+- `check-filename-pattern`: Check that filename match a specified regular expression
+- `check-no-commit-comment`: Check for `NO_COMMIT` comments
+- `tidy-gitkeep`: Remove redundant `.gitkeep` files
 
-<img alt="lineage-diagrams" src="https://raw.githubusercontent.com/billwallis/billiam-database/main/billiam_database/assets/dbt-dag.png"/>
+There is also the undocumented hook `check-dbt-project-version` which keeps the version specified in `dbt_project.yml` in sync with the Python project version.
 
-The dbt documentation is hosted at:
+---
 
-- [https://billwallis.github.io/billiam-database](https://billwallis.github.io/billiam-database)
+## [<img alt="Advent of Code" height="16px" src="https://adventofcode.com/favicon.ico"> Advent of Code (SQL)](https://github.com/billwallis/advent-of-code-sql)
+
+<span style="color:grey" size=1>[https://github.com/billwallis/advent-of-code-sql](https://github.com/billwallis/advent-of-code-sql)</span>
+
+Solutions to the Advent of Code problem sets, written in SQL!
+
+My DSA isn't great so I don't have any complete years yet, but it's a fun way to flex [DuckDB](https://duckdb.org/).
+
+---
+
+## [🥋 SQL Problems](https://github.com/billwallis/sql-problems)
+
+<span style="color:grey" size=1>[https://github.com/billwallis/sql-problems](https://github.com/billwallis/sql-problems)</span>
+
+There are countless websites for practising SQL. I've attempted the hardest free problems across a bunch of them, documenting [my solutions](https://github.com/billwallis/sql-problems/tree/main/src) and [my opinions on the platforms](https://github.com/billwallis/sql-problems/blob/main/src/reviews.md).
 
 ---
 
@@ -124,12 +173,12 @@ The repo adds four aggregator extensions and three extractor extensions:
 
 Excel will never go away... So let's enrich it with some quality-of-life features wrapped up into a handy custom ribbon tab (in addition to the millions of features that Excel already has).
 
-[//]: # "Uncomment once the repo is no longer private"
-[//]: # '<div style="text-align: center;">'
-[//]: #
-[//]: # '<img alt="personal-toolkit-ribbon" src="https://raw.githubusercontent.com/billwallis/vba-projects/main/personal-toolkit/personal-toolkit-ribbon.png"/>'
-[//]: #
-[//]: # "</div>"
+<div style="text-align: center;">
+
+<img alt="personal-toolkit-ribbon" src="https://raw.githubusercontent.com/billwallis/vba-projects/main/personal-toolkit/personal-toolkit-ribbon.png"/>
+
+</div>
+
 
 The features are built using VBA, and the custom ribbon tab is added using the **Office RibbonX Editor** available at:
 
@@ -151,52 +200,6 @@ It was originally written for some former colleagues and has been slightly adapt
 
 - [https://youtube.com/playlist?list=PLNIs-AWhQzckr8Dgmgb3akx_gFMnpxTN5](https://youtube.com/playlist?list=PLNIs-AWhQzckr8Dgmgb3akx_gFMnpxTN5)
 - [https://youtube.com/playlist?list=PLNIs-AWhQzckV9rAM3yv8ym4pioIMA0UR](https://youtube.com/playlist?list=PLNIs-AWhQzckV9rAM3yv8ym4pioIMA0UR)
-
----
-
-## [🌍 SQL Schema Models](https://github.com/billwallis/sql-schema-models)
-
-<span style="color:grey" size=1>[https://github.com/billwallis/sql-schema-models](https://github.com/billwallis/sql-schema-models)</span>
-
-Since I work with data all day every day, this is a start at some generalised data models.
-
-For example, most databases (at least, analytical ones) benefit from having some calendar tables, also sometimes referred to as a "date dimension" from when they were built into the Kimball star schema architecture.
-
-This is also a chance for me to just practise data modelling and data generation, so don't take these models too seriously.
-
----
-
-## [💰 Loan Calculations](https://github.com/billwallis/loan-calcs)
-
-<span style="color:grey" size=1>[https://github.com/billwallis/loan-calcs](https://github.com/billwallis/loan-calcs)</span>
-
-I worked in Finance for 4 years and spent a lot of time working with loans. There are loads of helpful calculations to go with them, so this is a place to both document them and to also expose them through Python classes.
-
-Mainly another opportunity for me to play around with OOP (mainly inheritance in this case) and to have fun with some maths.
-
----
-
-## [🃏 Blackjack Emulator](https://github.com/billwallis/blackjack)
-
-<span style="color:grey" size=1>[https://github.com/billwallis/blackjack](https://github.com/billwallis/blackjack)</span>
-
-Blackjack can be a fun casino game to play, especially when you win. This is an attempt to build Blackjack with Python just to get familiar with OOP concepts.
-
----
-
-## [🔁 Mathematics Textbook on Algebraic Permutations](https://github.com/billwallis/permutations)
-
-<span style="color:grey" size=1>[https://github.com/billwallis/permutations](https://github.com/billwallis/permutations)</span>
-
-> Not really in development any more (and not even finished)
-
-There's a branch of Maths called Linear Algebra, and one of the concepts that you can study is _permutations_:
-
-- [https://en.wikipedia.org/wiki/Permutation](https://en.wikipedia.org/wiki/Permutation)
-
-They're a pretty simple concept, but learning about them becomes a pain because there's a lot of different --- and in some places, contradictory --- notation used to describe them and what they can do.
-
-The purpose of this project was to show all the different notations, where they differ, and how to solve problems using each of them.
 
 ---
 
