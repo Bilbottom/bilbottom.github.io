@@ -14,6 +14,18 @@ Showcase of some of my favourite personal projects:
 
 ---
 
+## Technical articles
+
+During my time at [Tasman Analytics](https://www.tasman.ai), I wrote some of [their articles](https://www.tasman.ai/news):
+
+- [8 Ways to Flex DuckDB](https://www.tasman.ai/news/8-ways-to-flex-duckdb)
+- [Modern Python Development with uv](https://www.tasman.ai/news/modern-python-development-astral-uv)
+- [Tasman's Top Ten Tips & Tricks for dbt](https://www.tasman.ai/news/10-essential-dbt-tips-and-tricks-for-faster-development)
+- [Modern SQL: The Latest and Greatest SQL Features (part 1)](https://www.tasman.ai/news/modern-sql-the-latest-and-greatest-sql-features-part-1)
+- [Modern SQL: The Latest and Greatest SQL Features (part 2)](https://www.tasman.ai/news/modern-sql-the-latest-and-greatest-sql-features-part-2)
+
+---
+
 ## [<img alt="dbt Labs" height="16px" src="https://www.getdbt.com/favicon.ico"> dbt-π: Custom Python in dbt](https://github.com/billwallis/dbt-py)
 
 <span style="color:grey" size=1>[https://github.com/billwallis/dbt-py](https://github.com/billwallis/dbt-py)</span>
