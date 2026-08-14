@@ -23,6 +23,7 @@ During my time at [Tasman Analytics](https://www.tasman.ai), I wrote some of [th
 - [Tasman's Top Ten Tips & Tricks for dbt](https://www.tasman.ai/news/10-essential-dbt-tips-and-tricks-for-faster-development)
 - [Modern SQL: The Latest and Greatest SQL Features (part 1)](https://www.tasman.ai/news/modern-sql-the-latest-and-greatest-sql-features-part-1)
 - [Modern SQL: The Latest and Greatest SQL Features (part 2)](https://www.tasman.ai/news/modern-sql-the-latest-and-greatest-sql-features-part-2)
+- [Our Favourite Git Tips and Tricks](https://www.tasman.ai/news/our-favourite-git-tips-and-tricks)
 
 ---
 
